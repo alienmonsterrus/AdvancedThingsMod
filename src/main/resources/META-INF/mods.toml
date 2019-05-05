@@ -17,7 +17,7 @@ modId="advancedthings" #mandatory
 version="${file.jarVersion}" #mandatory
  # A display name for the mod
 displayName="Advanced Things" #mandatory
-displayURL="http://github.com/alienmonsterrus/advancedthings" #optional
+displayURL="http://github.com/alienmonsterrus/advancedthingsmod" #optional
 # A text field displayed in the mod UI
 credits="Thanks my mom" #optional
 # A text field displayed in the mod UI
