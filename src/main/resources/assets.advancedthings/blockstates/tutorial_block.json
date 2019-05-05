@@ -1,5 +1,5 @@
 {
   "variants": {
-    "": { "model": "block/iron_block" }
+    "": { "model": "advancedthings:block/tutorial_block" }
   }
 }
