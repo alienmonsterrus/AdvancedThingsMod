@@ -1,6 +1,6 @@
 {
   "parent": "block/cube_all",
   "textures": {
-    "all": "advacnedthings:tutorial_block"
+    "all": "advancedthings:tutorial_block"
   }
 }
