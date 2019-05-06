@@ -2,6 +2,6 @@
   "parent": "item/generated",
   "textures":
   {
-    "": "advancedthings:item/future_core"
+    "layer0": "advancedthings:item/future_core"
   }
 }
