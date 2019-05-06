@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "  P",
+    "CP ",
+    "B  "
+  ],
+  "key": {
+    "P": {
+      "item": "advancedthings:advanced_saber_pattern"
+    },
+    "C": {
+      "item": "advancedthings:future_core"
+    },
+    "B": {
+      "item": "minecraft:blaze_rod"
+    }
+  },
+  "result": {
+    "item": "advancedthings:advanced_saber",
+    "count": 1
+  }
+}

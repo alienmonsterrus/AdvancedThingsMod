@@ -1,0 +1,9 @@
+{
+  "parent": "item/handheld",
+
+  "textures":
+  {
+    "__comment": "Default",
+    "layer0": "advancedthings:item/advanced_shovel"
+}
+}

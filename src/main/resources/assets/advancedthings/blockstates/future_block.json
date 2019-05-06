@@ -1,0 +1,5 @@
+{
+  "variants": {
+    "": { "model": "advancedthings:block/future_block" }
+  }
+}

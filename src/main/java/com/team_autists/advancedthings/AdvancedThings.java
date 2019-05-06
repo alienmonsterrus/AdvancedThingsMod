@@ -1,7 +1,7 @@
 package com.team_autists.advancedthings;
 
 import com.team_autists.advancedthings.blocks.BlockList;
-import com.team_autists.advancedthings.items.ItemList;
+import com.team_autists.advancedthings.items.*;
 import net.minecraft.block.Block;
 import net.minecraft.block.SoundType;
 import net.minecraft.block.material.Material;
@@ -9,6 +9,7 @@ import net.minecraft.init.Blocks;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemBlock;
 import net.minecraft.item.ItemGroup;
+import net.minecraft.item.ItemPickaxe;
 import net.minecraft.util.ResourceLocation;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.RegistryEvent;
@@ -56,21 +57,29 @@ public class AdvancedThings {
 		@SubscribeEvent
 		public static void registerItems(final RegistryEvent.Register<Item> event) {
 			event.getRegistry().registerAll(
-				ItemList.TutorialItem = new Item(new Item.Properties().group(ItemGroup.MISC))
-					.setRegistryName(location("tutorial_item")),
-				ItemList.TutorialBlock = new ItemBlock(BlockList.TutorialBlock, new Item.Properties()
-					.group(ItemGroup.MISC)).setRegistryName(BlockList.TutorialBlock.getRegistryName())
+				ItemList.TutorialItem = new Item(new Item.Properties().group(ItemGroup.MISC)).setRegistryName(location("tutorial_item")),
+				ItemList.FutureBlock = new ItemBlock(BlockList.FutureBlock, new Item.Properties().group(ItemGroup.BUILDING_BLOCKS)).setRegistryName(BlockList.FutureBlock.getRegistryName()),
+				ItemList.CobblestoneBricks = new ItemBlock(BlockList.CobblestoneBricks, new Item.Properties().group(ItemGroup.BUILDING_BLOCKS)).setRegistryName(BlockList.CobblestoneBricks.getRegistryName()),
+				ItemList.FutureCore = new Item(new Item.Properties().group(ItemGroup.MISC)).setRegistryName(location("future_core")),
+				ItemList.AdvancedPickaxe = new ItemCustomPickaxe(ToolMaterialList.advanced, -4,6.0F, new Item.Properties().group(ItemGroup.TOOLS)).setRegistryName(location("advanced_pickaxe")),
+				ItemList.AdvancedSaber = new ItemCustomSaber(ToolMaterialList.advanced, 6, 6.0F, new Item.Properties().group(ItemGroup.COMBAT)).setRegistryName(location("advanced_saber")),
+				ItemList.AdvancedShovel = new ItemCustomShovel(ToolMaterialList.advanced, -6, 6.0F, new Item.Properties().group(ItemGroup.TOOLS)).setRegistryName(location("advanced_shovel"))
 			);
 
 			LOGGER.info("Items registered");
+
+
 		}
 
 		@SubscribeEvent
 		public static void registerBlocks(final RegistryEvent.Register<Block> event) {
 			event.getRegistry().registerAll(
-				BlockList.TutorialBlock = new Block(Block.Properties.create(Material.GROUND)
+				BlockList.FutureBlock = new Block(Block.Properties.create(Material.ROCK)
 					.hardnessAndResistance(2.0f, 3.0f)
-					.lightValue(5).sound(SoundType.GROUND)).setRegistryName(location("tutorial_block"))
+					.lightValue(5).sound(SoundType.GLASS)).setRegistryName(location("future_block")),
+				BlockList.CobblestoneBricks = new Block(Block.Properties.create(Material.ROCK)
+					.hardnessAndResistance(2.0f,3.0f).lightValue(5).sound(SoundType.STONE))
+					.setRegistryName(location("cobblestone_bricks"))
 			);
 
 			LOGGER.info("Blocks registered");

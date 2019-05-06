@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " OC",
+    " SO",
+    "S  "
+  ],
+  "key": {
+    "O": {
+      "item": "minecraft:obsidian"
+    },
+    "S": {
+      "item": "minecraft:blaze_rod"
+    },
+    "C": {
+      "item": "advancedthings:future_core"
+    }
+  },
+  "result": {
+    "item": "advancedthings:advanced_shovel",
+    "count": 1
+  }
+}

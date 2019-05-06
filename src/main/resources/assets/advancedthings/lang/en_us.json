@@ -1,4 +1,10 @@
 {
+  "item.advancedthings.future_core": "Future Core",
+  "item.advancedthings.advanced_pickaxe": "Advanced Pickaxe",
+  "item.advancedthings.advanced_shovel": "Advanced Shovel",
+  "item.advancedthings.advanced_saber": "Advanced Saber",
   "item.advancedthings.tutorial_item": "Tutorial Item",
-  "block.advancedthings.tutorial_block": "Tutorial Block"
+
+  "block.advancedthings.future_block": "Future Block",
+  "block.advancedthings.cobblestone_bricks": "Cobblestone Bricks"
 }

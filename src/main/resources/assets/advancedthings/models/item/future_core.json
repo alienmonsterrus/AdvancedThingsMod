@@ -1,0 +1,7 @@
+{
+  "parent": "item/generated",
+  "textures":
+  {
+    "": "advancedthings:item/future_core"
+  }
+}
