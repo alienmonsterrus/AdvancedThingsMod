@@ -6,7 +6,10 @@ import net.minecraft.item.crafting.Ingredient;
 
 public enum ToolMaterialList implements IItemTier
 {
-    ADVANCED(10.0F, 9.0F, 4096, 5, 25, ItemList.FutureCore);
+    ADVANCED(10.0F, 9.0F, 4096, 5, 25, ItemList.FutureCore),
+    AZUREINGOT(5.0F, 4.0F, 512, 5, 25, ItemList.AzureIngot),
+    MAGNETICINGOT(5.0F, 4.0F, 512, 5, 25, ItemList.MagneticIngot),
+    COOLINGOT(5.0F, 4.0F, 512, 5, 25, ItemList.CoolIngot);
 
     private float attackDamage, efficiency;
     private int durability, harvestLevel, enchantability;

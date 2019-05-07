@@ -61,8 +61,27 @@ public class AdvancedThings {
 				ItemList.CobblestoneBricks = new ItemBlock(BlockList.CobblestoneBricks, new Item.Properties()
 					.group(ItemGroup.BUILDING_BLOCKS)).setRegistryName(BlockList.CobblestoneBricks.getRegistryName()),
 
+				ItemList.CoolOre = new ItemBlock(BlockList.CoolOre, new Item.Properties()
+					.group(ItemGroup.BUILDING_BLOCKS)).setRegistryName(BlockList.CoolOre.getRegistryName()),
+
+				ItemList.AzureOre = new ItemBlock(BlockList.AzureOre, new Item.Properties()
+					.group(ItemGroup.BUILDING_BLOCKS)).setRegistryName(BlockList.AzureOre.getRegistryName()),
+
+				ItemList.MagneticOre = new ItemBlock(BlockList.MagneticOre, new Item.Properties()
+					.group(ItemGroup.BUILDING_BLOCKS)).setRegistryName(BlockList.MagneticOre.getRegistryName()),
+
 				ItemList.FutureCore = new Item(new Item.Properties()
 					.group(ItemGroup.MISC)).setRegistryName(location("future_core")),
+
+				ItemList.AzureIngot = new Item(new Item.Properties()
+					.group(ItemGroup.MISC)).setRegistryName(location("azure_ingot")),
+
+				ItemList.CoolIngot = new Item(new Item.Properties()
+					.group(ItemGroup.MISC)).setRegistryName(location("cool_ingot")),
+
+				ItemList.MagneticIngot = new Item(new Item.Properties()
+					.group(ItemGroup.MISC)).setRegistryName(location("magnetic_ingot")),
+
 
 				ItemList.AdvancedPickaxe = new ItemCustomPickaxe(
 					ToolMaterialList.ADVANCED, -4,6.0F, new Item.Properties()
@@ -90,7 +109,19 @@ public class AdvancedThings {
 				BlockList.CobblestoneBricks = new Block(Block.Properties.create(Material.ROCK)
 					.hardnessAndResistance(2.0f,3.0f)
 					.lightValue(5).sound(SoundType.STONE))
-					.setRegistryName(location("cobblestone_bricks"))
+					.setRegistryName(location("cobblestone_bricks")),
+				BlockList.AzureOre = new Block(Block.Properties.create(Material.ROCK)
+					.hardnessAndResistance(2.0f,3.0f)
+					.lightValue(5).sound(SoundType.STONE))
+					.setRegistryName(location("azure_ore_block")),
+				BlockList.CoolOre = new Block(Block.Properties.create(Material.ROCK)
+					.hardnessAndResistance(2.0f,3.0f)
+					.lightValue(5).sound(SoundType.STONE))
+					.setRegistryName(location("cool_ore_block")),
+				BlockList.MagneticOre = new Block(Block.Properties.create(Material.ROCK)
+					.hardnessAndResistance(2.0f,3.0f)
+					.lightValue(5).sound(SoundType.STONE))
+					.setRegistryName(location("magnetic_ore_block"))
 			);
 		}
 
