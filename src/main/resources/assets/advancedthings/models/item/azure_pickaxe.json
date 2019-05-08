@@ -2,6 +2,6 @@
   "parent": "item/generated",
   "textures":
   {
-    "layer0": "advancedthings:item/advanced_pickaxe"
+    "layer0": "advancedthings:item/azure_pickaxe"
   }
 }

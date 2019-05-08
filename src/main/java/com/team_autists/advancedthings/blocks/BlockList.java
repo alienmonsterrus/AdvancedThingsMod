@@ -7,6 +7,9 @@ public class BlockList {
 	//Blocks decorative
 	public static Block FutureBlock;
 	public static Block CobblestoneBricks;
+    public static Block MagneticIngotBlock;
+    public static Block CoolIngotBlock;
+    public static Block AzureIngotBlock;
 
 	//Blocks ores
 	public static Block AzureOre;

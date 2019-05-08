@@ -1,0 +1,6 @@
+{
+  "type": "minecraft:smelting",
+  "ingredient": "advancedthings:composite_chunk",
+
+  "result": "advancedthings:composite_ingot"
+}

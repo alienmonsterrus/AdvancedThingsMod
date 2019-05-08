@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "AAA",
+    "MMM",
+    "CCC"
+  ],
+  "key": {
+    "A": {
+      "item": "advancedthings:azure_ingot"
+    },
+    "C": {
+      "item": "advancedthings:magnetic_ingot"
+    },
+    "M": {
+      "item": "advancedthings:cool_ingot"
+    }
+  },
+  "result": {
+    "item": "advancedthings:composite_chunk",
+    "count": 1
+  }
+}

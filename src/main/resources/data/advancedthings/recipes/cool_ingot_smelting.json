@@ -1,0 +1,6 @@
+{
+  "type": "minecraft:smelting",
+  "ingredient": "advancedthings:cool_ore_block",
+
+  "result": "advancedthings:cool_ingot"
+}

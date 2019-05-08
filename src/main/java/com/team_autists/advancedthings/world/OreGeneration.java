@@ -14,37 +14,44 @@ public class OreGeneration
 {
     public static void setupOreGeneration()
     {
-        for(Biome biome : ForgeRegistries.BIOMES)
+        for (Biome biome : ForgeRegistries.BIOMES)
         {
-            CountRangeConfig azure_ore_placement = new CountRangeConfig(
-                300, 2, 30, 50);
-
-            biome.addFeature(GenerationStage.Decoration.UNDERGROUND_ORES,
-                new CompositeFeature<>(Feature.MINABLE,
-                new MinableConfig(MinableConfig.IS_ROCK, BlockList.AzureOre.getDefaultState(), 20),
-                new CountRange(), azure_ore_placement));
+            addAzureOre(biome);
+            addMagneticOre(biome);
+            addCoolOre(biome);
         }
+    }
 
-        for(Biome biome : ForgeRegistries.BIOMES)
-        {
-            CountRangeConfig magnetic_ore_placement = new CountRangeConfig(
-                    250, 2, 30, 50);
+    private static void addAzureOre(Biome biome) {
 
-            biome.addFeature(GenerationStage.Decoration.UNDERGROUND_ORES,
+        CountRangeConfig azure_ore_placement = new CountRangeConfig(
+                2, 2, 5, 60);
+
+        biome.addFeature(GenerationStage.Decoration.UNDERGROUND_ORES,
                 new CompositeFeature<>(Feature.MINABLE,
-                new MinableConfig(MinableConfig.IS_ROCK, BlockList.MagneticOre.getDefaultState(), 20),
-                new CountRange(), magnetic_ore_placement));
-        }
-        for(Biome biome : ForgeRegistries.BIOMES)
-        {
-            CountRangeConfig cool_ore_placement = new CountRangeConfig(
-                    100, 2, 11, 16);
+                        new MinableConfig(MinableConfig.IS_ROCK, BlockList.AzureOre.getDefaultState(), 20),
+                        new CountRange(), azure_ore_placement));
+    }
 
-            biome.addFeature(GenerationStage.Decoration.UNDERGROUND_ORES,
+    private static void addMagneticOre(Biome biome) {
+
+        CountRangeConfig magnetic_ore_placement = new CountRangeConfig(
+                2, 2, 5, 60);
+
+        biome.addFeature(GenerationStage.Decoration.UNDERGROUND_ORES,
                 new CompositeFeature<>(Feature.MINABLE,
+                        new MinableConfig(MinableConfig.IS_ROCK, BlockList.MagneticOre.getDefaultState(), 20),
+                        new CountRange(), magnetic_ore_placement));
+    }
+
+    private static void addCoolOre(Biome biome) {
+
+        CountRangeConfig cool_ore_placement = new CountRangeConfig(
+                2, 2, 5, 60);
+
+        biome.addFeature(GenerationStage.Decoration.UNDERGROUND_ORES,
+            new CompositeFeature<>(Feature.MINABLE,
                 new MinableConfig(MinableConfig.IS_ROCK, BlockList.CoolOre.getDefaultState(), 20),
                 new CountRange(), cool_ore_placement));
-        }
-
     }
 }

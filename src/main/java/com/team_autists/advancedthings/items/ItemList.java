@@ -12,6 +12,7 @@ public class ItemList {
 	public static Item CoolIngot;
 	public static Item MagneticIngot;
 	public static Item AzureIngot;
+	public static Item CompositeChunk;
 	public static Item CompositeIngot;
 
 	//Item Decorate blocks
@@ -37,5 +38,6 @@ public class ItemList {
 	public static Item MagneticShovel;
 
 	public static Item CoolSword;
-
+    public static Item CoolPickaxe;
+    public static Item CoolShovel;
 }

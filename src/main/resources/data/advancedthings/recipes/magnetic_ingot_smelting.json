@@ -1,0 +1,6 @@
+{
+  "type": "minecraft:smelting",
+  "ingredient": "advancedthings:magnetic_ore_block",
+
+  "result": "advancedthings:magnetic_ingot"
+}

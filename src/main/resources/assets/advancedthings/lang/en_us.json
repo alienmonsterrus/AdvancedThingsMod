@@ -1,10 +1,32 @@
 {
   "item.advancedthings.future_core": "Future Core",
+
+  "item.advancedthings.azure_ingot": "Azure Ingot",
+  "item.advancedthings.cool_ingot": "Cool Ingot",
+  "item.advancedthings.magnetic_ingot": "Magnetic Ingot",
+  "item.advancedthings.composite_ingot": "Composite Ingot",
+  "item.advancedthings.composite_chunk": "Composite Chunk",
+
   "item.advancedthings.advanced_pickaxe": "Advanced Pickaxe",
   "item.advancedthings.advanced_shovel": "Advanced Shovel",
   "item.advancedthings.advanced_saber": "Advanced Saber",
   "item.advancedthings.tutorial_item": "Tutorial Item",
+  "item.advancedthings.azure_pickaxe": "Azure Pickaxe",
+  "item.advancedthings.azure_shovel": "Azure Shovel",
+  "item.advancedthings.azure_sword": "Azure Sword",
+  "item.advancedthings.cool_pickaxe": "Cool Pickaxe",
+  "item.advancedthings.cool_shovel": "Cool Shovel",
+  "item.advancedthings.cool_sword": "Cool Sword",
+  "item.advancedthings.magnetic_pickaxe": "Magnetic Pickaxe",
+  "item.advancedthings.magnetic_shovel": "Magnetic Shovel",
+  "item.advancedthings.magnetic_sword": "Magnetic Sword",
+
 
   "block.advancedthings.future_block": "Future Block",
-  "block.advancedthings.cobblestone_bricks": "Cobblestone Bricks"
+  "block.advancedthings.cobblestone_bricks": "Cobblestone Bricks",
+  "block.advancedthings.azure_ore_block": "Azure Ore",
+  "block.advancedthings.magnetic_ore_block": "Magnetic Ore",
+  "block.advancedthings.cool_ore_block": "Cool Ore"
+
 }
+//Added new items, ores, recipes, textures and OreGeneration

@@ -2,6 +2,7 @@ package com.team_autists.advancedthings;
 
 import com.team_autists.advancedthings.blocks.BlockList;
 import com.team_autists.advancedthings.items.*;
+import com.team_autists.advancedthings.world.OreGeneration;
 import net.minecraft.block.Block;
 import net.minecraft.block.SoundType;
 import net.minecraft.block.material.Material;
@@ -38,6 +39,7 @@ public class AdvancedThings {
 	}
 
 	private void setup(final FMLCommonSetupEvent event) {
+		OreGeneration.setupOreGeneration();
 		LOGGER.info("DIRT BLOCK >> {}", Blocks.DIRT.getRegistryName());
 	}
 
@@ -82,6 +84,11 @@ public class AdvancedThings {
 				ItemList.MagneticIngot = new Item(new Item.Properties()
 					.group(ItemGroup.MISC)).setRegistryName(location("magnetic_ingot")),
 
+                ItemList.CompositeIngot = new Item(new Item.Properties()
+                    .group(ItemGroup.MISC)).setRegistryName(location("composite_ingot")),
+
+                ItemList.CompositeChunk = new Item(new Item.Properties()
+                    .group(ItemGroup.MISC)).setRegistryName(location("composite_chunk")),
 
 				ItemList.AdvancedPickaxe = new ItemCustomPickaxe(
 					ToolMaterialList.ADVANCED, -4,6.0F, new Item.Properties()
@@ -92,8 +99,46 @@ public class AdvancedThings {
 					.group(ItemGroup.COMBAT)).setRegistryName(location("advanced_saber")),
 
 				ItemList.AdvancedShovel = new ItemCustomShovel(
-					ToolMaterialList.ADVANCED, -6, 6.0F, new Item.Properties()
-					.group(ItemGroup.TOOLS)).setRegistryName(location("advanced_shovel"))
+					ToolMaterialList.ADVANCED, -10, 6.0F, new Item.Properties()
+					.group(ItemGroup.TOOLS)).setRegistryName(location("advanced_shovel")),
+
+                ItemList.MagneticPickaxe = new ItemCustomPickaxe(
+                    ToolMaterialList.MAGNETICINGOT, 1,6.0F, new Item.Properties()
+                    .group(ItemGroup.TOOLS)).setRegistryName(location("magnetic_pickaxe")),
+
+                ItemList.MagneticSword = new ItemCustomSaber(
+                    ToolMaterialList.MAGNETICINGOT, 1, 6.0F, new Item.Properties()
+                    .group(ItemGroup.COMBAT)).setRegistryName(location("magnetic_sword")),
+
+                ItemList.MagneticShovel = new ItemCustomShovel(
+                    ToolMaterialList.MAGNETICINGOT, -6, 6.0F, new Item.Properties()
+                    .group(ItemGroup.TOOLS)).setRegistryName(location("magnetic_shovel")),
+
+                ItemList.CoolPickaxe = new ItemCustomPickaxe(
+                    ToolMaterialList.COOLINGOT, 1,6.0F, new Item.Properties()
+                    .group(ItemGroup.TOOLS)).setRegistryName(location("cool_pickaxe")),
+
+                ItemList.CoolSword = new ItemCustomSaber(
+                    ToolMaterialList.COOLINGOT, 6, 6.0F, new Item.Properties()
+                    .group(ItemGroup.COMBAT)).setRegistryName(location("cool_sword")),
+
+                ItemList.CoolShovel = new ItemCustomShovel(
+                    ToolMaterialList.COOLINGOT, -6, 6.0F, new Item.Properties()
+                    .group(ItemGroup.TOOLS)).setRegistryName(location("cool_shovel")),
+
+                ItemList.AzurePickaxe= new ItemCustomPickaxe(
+                    ToolMaterialList.AZUREINGOT, 1,6.0F, new Item.Properties()
+                    .group(ItemGroup.TOOLS)).setRegistryName(location("azure_pickaxe")),
+
+                ItemList.AzureSword = new ItemCustomSaber(
+                    ToolMaterialList.AZUREINGOT, 6, 6.0F, new Item.Properties()
+                    .group(ItemGroup.COMBAT)).setRegistryName(location("azure_sword")),
+
+                ItemList.AzureShovel = new ItemCustomShovel(
+                    ToolMaterialList.AZUREINGOT, -6, 6.0F, new Item.Properties()
+                    .group(ItemGroup.TOOLS)).setRegistryName(location("azure_shovel"))
+
+
 			);
 		}
 
@@ -110,15 +155,18 @@ public class AdvancedThings {
 					.hardnessAndResistance(2.0f,3.0f)
 					.lightValue(5).sound(SoundType.STONE))
 					.setRegistryName(location("cobblestone_bricks")),
-				BlockList.AzureOre = new Block(Block.Properties.create(Material.ROCK)
+
+                BlockList.AzureOre = new Block(Block.Properties.create(Material.ROCK)
 					.hardnessAndResistance(2.0f,3.0f)
 					.lightValue(5).sound(SoundType.STONE))
 					.setRegistryName(location("azure_ore_block")),
-				BlockList.CoolOre = new Block(Block.Properties.create(Material.ROCK)
+
+                BlockList.CoolOre = new Block(Block.Properties.create(Material.ROCK)
 					.hardnessAndResistance(2.0f,3.0f)
 					.lightValue(5).sound(SoundType.STONE))
 					.setRegistryName(location("cool_ore_block")),
-				BlockList.MagneticOre = new Block(Block.Properties.create(Material.ROCK)
+
+                BlockList.MagneticOre = new Block(Block.Properties.create(Material.ROCK)
 					.hardnessAndResistance(2.0f,3.0f)
 					.lightValue(5).sound(SoundType.STONE))
 					.setRegistryName(location("magnetic_ore_block"))

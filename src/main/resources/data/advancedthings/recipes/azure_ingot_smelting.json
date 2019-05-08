@@ -1,0 +1,6 @@
+{
+  "type": "minecraft:smelting",
+  "ingredient": "advancedthings:azure_ore_block",
+
+  "result": "advancedthings:azure_ingot"
+}
